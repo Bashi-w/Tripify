@@ -173,7 +173,7 @@ h1, h2{
 }
 .tea .tea-products{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2em;
 }
 .tea .tea-products section{
@@ -320,6 +320,9 @@ form input .submit{
     }
     .tea{
         display: flex;
+    }
+    .tea .tea-products{
+        grid-template-columns: 1fr 1fr;
     }
     .donations{
         display: grid;
