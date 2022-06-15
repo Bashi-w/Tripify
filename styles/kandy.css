@@ -1,0 +1,205 @@
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+/*universal selector*/
+*{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+html{
+    font-size: 55%;
+    scroll-behavior: smooth;
+}
+/*adding bg-image to body*/
+body{
+    background-image:linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/sl.jpg);
+    background-attachment: fixed;
+}
+
+/*styling header*/
+header{
+    text-transform: uppercase;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem ;
+}
+
+/*styling navbar*/
+header .navbar{
+    display: none;
+    position: absolute;
+    opacity: 0.65;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+header .navbar  li{
+    display: flex;
+    margin: 2rem 8%;
+}
+
+/*styling active link to show user what page they.re on*/
+header .navbar li .active{
+    color: rgb(8, 8, 8);
+    background-color: rgb(84, 202, 100);
+    padding: 1em;
+    border-radius: 10%;
+}
+header .navbar a:hover{
+    color: lightgreen;
+    font-weight: 900;
+}
+main{
+    top: 100%;
+    margin: 5%;
+    padding: 2em;
+    background-color:rgb(61, 60, 60);
+    animation: x 1s ease 0.2s 1 normal forwards;   
+}
+
+.name{
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+}
+.second-nav {
+    border: 1px solid black;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+}
+.second-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+}
+.second-nav ul li{
+    border-bottom: 1px solid black;
+
+}
+.second-nav ul li a{
+    color: rgb(97, 89, 89);
+    padding: 0.2em;
+
+}
+.second-nav ul li a:hover{
+    color: black;
+    font-weight: bolder;
+
+}
+.about-location{
+    flex-direction: column;
+}
+.about-location img{
+    width: 100%;
+}
+.content img{
+    width: 60%;
+}
+.content p{
+    padding: 2em;
+    font-size: larger;
+    background-color: lightgray;
+}
+
+/*styling footer*/
+.footer {
+    padding: 1em;
+    width: 100%;
+    background: linear-gradient(rgb(8, 39, 8),black);
+    color:white;
+    text-align:center;
+}
+.footer .references{
+    background-color: rgb(56, 56, 56);
+}
+.footer a, .footer .references a{
+    color: rgb(149, 221, 161);
+}
+
+/*animations*/
+@keyframes x{
+    from{margin: 10%; background-color: rgb(61, 60, 60);}
+    to{margin: 4%; background-color: #fff;}
+}
+
+/*media queries*/
+@media only screen and (min-width: 70em) {  /*desktop*/
+    html{
+        font-size: 70%;
+    }
+    header .navbar{
+        display: flex;
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        width: fit-content;
+        text-align: center;
+        margin-left: 20%;
+        height: fit-content;
+        
+    }
+    .header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .navbar  li{
+        display: inline-block;
+        margin: 1rem;
+    }
+    header .navbar li a{
+        color: #fff;
+        font-size: 1rem;
+        margin: 0.8rem;
+    }
+    .logo{
+        display: none;
+    }
+    .second-nav ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .second-nav ul li{
+        border-bottom: none;
+    
+    }
+    .about-location{
+        display: flex;
+        flex-direction: row;
+        max-height: 130vh;
+        background: url(bg-images/toothrelic.jpg) no-repeat center top;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .content{
+        padding: 3em;
+        overflow: scroll;
+    }
+    .content p,.content ol{
+        font-size: 1.5rem;
+        background-color: white;
+        opacity: 0.7;
+        padding: 1em;
+    }
+    .content img{
+        width: 100%;
+    }
+}

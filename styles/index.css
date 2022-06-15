@@ -1,0 +1,284 @@
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+/*Universal SElector*/
+*{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+html{
+    font-size: 55%;
+    scroll-behavior: smooth;
+
+}
+/*Styling header*/
+header{
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem ;
+}
+/*logo for mobile*/
+.logo img{
+    width: 35%;
+}
+/*logo for desktop*/
+.logo2{
+    display: none;
+}
+
+/*styling navbar*/
+header .navbar{
+    position: absolute;
+    background-color: rgb(192, 219, 195);   
+    opacity: 0.55;
+    top: 100%;
+    right: 0;
+    left: 0;
+    height: fit-content;
+}
+header .navbar  li{
+    display: flex;
+    margin: 2rem 8%;
+}
+header .navbar li a{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+/*styling active link to show user shich page they're on*/
+header .navbar li .active{
+    color: rgb(8, 8, 8);
+    background-color: rgb(84, 202, 100);
+    padding: 1em;
+    border-radius: 10%;
+}
+
+header .navbar a:hover{
+    font-size: larger;
+    font-weight: 900;
+}
+
+.responsive-img{
+    min-height: 100vh;
+    background: linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/home3.webp);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.responsive-img .welcome-text{
+    text-align: center;
+    margin-top: 80%;
+    animation: x 2s ease 1s 1 normal forwards;
+    opacity: 0.5;
+}
+/*animation*/
+@keyframes x {
+    0%{opacity: 0.5;}
+    50%{opacity: 0.75;}
+    100%{opacity: 1;}
+    
+}
+.responsive-img .welcome-text h3{
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+
+}
+.responsive-img .welcome-text p{
+    font-size: 3rem;
+    color: white;
+    
+}
+.responsive-img .welcome-text .direct{
+    border: 1px solid #fff;
+    border-radius: 5%;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+.responsive-img .welcome-text .direct:hover{
+    background: rgb(133, 209, 137);
+    color: black;
+}
+
+/*adding background image to body*/
+body{
+    background-image:linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/sl.jpg);
+    background-attachment: fixed;
+}
+
+.content{
+    margin: 5% 10%;
+    font-size: 1.4em;
+    color: #fff;
+    background-color: rgb(37, 37, 37);
+    opacity: 0.85;
+}
+.content:hover{
+    opacity: 1;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.content section{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2em;
+}
+.location img{
+    padding: 1em;
+    width: 90%;
+}
+figure{
+    display: block;
+}
+.content .nature-diversity img{
+    width: 100%;
+}
+.popularity img{
+    width: 40%;
+    margin: 0 30%;
+}
+.end{
+    display: block;
+    width: 100%;
+}
+.gallery{
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    padding: 1em;
+    background-color: white;
+}
+.gallery img{
+    width: 70%;
+    height: 100%;
+}
+.gallery img:hover{
+    width: 79%;
+}
+.list{
+    padding: 3em;
+    color: black;
+    background-color: rgb(191, 230, 165);
+    box-shadow: 10px 10px grey;
+}
+.list a{
+    color: black;
+}
+.footer {
+    padding: 1em;
+    width: 100%;
+    background: linear-gradient(rgb(8, 39, 8),black);
+    color:white;
+    text-align:center;
+}
+.footer .references{
+    background-color: rgb(56, 56, 56);
+}
+.footer a, .footer .references a{
+    color: rgb(149, 221, 161);
+}
+
+/*media queries*/
+@media only screen and (min-width: 70em) { /*desktop*/
+    html{
+        font-size: 70%;
+    }
+    header .navbar{
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        width: 100%;
+        text-align: center;
+        height: 10%;
+        
+    }
+    .header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .navbar{
+        background-color: black;
+    }
+    header .navbar  li{
+        display: inline-block;
+        margin: 1rem;
+    }
+    header .navbar li a{
+        color: #fff;
+        font-size: 1rem;
+        margin: 0.8rem;
+    }
+    header .navbar a:hover{
+        color: lightgreen;
+    }
+    
+    .responsive-img .welcome-text{
+        margin-top: 10%;
+        width: 50%;
+    }
+    .responsive-img .socials{
+        margin: 5% 40%;      
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: block;
+    }
+    figure{
+        display: flex;
+        height: 20em;
+    }
+    .content .nature-diversity img{
+        width: 50%;
+        height: 100%;
+
+    }
+    .end{
+        display: flex;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        overflow: hidden;
+        padding: 1em;
+        width: 50%;
+    }
+    .gallery img{
+        width: 100%;
+        height: 100%;
+    }
+    .gallery img:hover{
+        width: 105%;
+    }
+    
+}
+
+    

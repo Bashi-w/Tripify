@@ -1,0 +1,299 @@
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+/*universal selector*/
+*{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+
+}
+html{
+    font-size: 55%;
+    scroll-behavior: smooth;
+}
+/*styling header*/
+header{
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  2rem;
+}
+
+/*logo for mobile*/
+.logo img{
+    width: 35%;
+}
+/*logo for desktop*/
+.logo2{
+    display: none;
+}
+
+/*add backgroung image to body*/
+body{
+    background-image:linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/sl.jpg);
+    background-attachment: fixed;
+}
+
+/*styling navbar*/
+header .navbar{
+    position: absolute;
+    background-color: rgb(192, 219, 195);   
+    opacity: 0.55;
+    top: 100%;
+    right: 0;
+    left: 0;
+    height: fit-content;
+}
+
+header .navbar  li{
+    display: flex;
+    margin: 2rem 8%;
+}
+
+header .navbar li a{
+    color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+header .navbar li .active{
+    color: rgb(8, 8, 8);
+    background-color: rgb(84, 202, 100);
+    padding: 0.5em;
+    border-radius: 10%;
+}
+header .navbar a:hover{
+    font-size: larger;
+    font-weight: 900;
+}
+
+.responsive-img{
+    min-height: 100vh;
+    background: linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/wild-cropped.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.responsive-img .welcome-text{
+    display: none;
+    margin-top: 20%;
+    width: 70%;
+    text-align: center;
+    transform: translate(20px,30px);
+
+}
+.responsive-img .welcome-text p{
+    font-size: 2rem;
+    color:white;
+    
+}
+.responsive-img .welcome-text .direct, .mobile-intro .direct{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+}
+.responsive-img .welcome-text .direct:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.mobile-intro{
+    color: white;
+    font-size: 2em;
+    padding: 1em;
+    background-color: #222;
+    opacity: 0.8;
+}
+.container{
+    background-color: #fff;
+    opacity: 0.75;
+    box-sizing: content-box;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    grid-gap: 10px;
+    
+} 
+
+    
+.container .entrance{
+    padding: 4em;
+
+}
+.container .entrance a img{
+    border-radius: 75%;
+    width: 70%;
+
+}
+
+.container .entrance img:hover{
+    width: 100%;
+
+}
+.container .entrance h4{
+    font-size: larger;
+
+}
+.attractions{
+    margin: 0 5%;
+    display: grid;
+    grid-gap: 1em;
+}
+.attractions img{
+    width: 45%;
+}
+.attractions section{
+    background-color: white;
+    border-radius: 15px;
+    padding: 2em;
+}
+
+/*styling map*/
+.attractions .map iframe{
+    background-color: rgb(144, 209, 158);
+    width: 100%;
+    height: 90%;
+}
+.attractions p{
+    font-size: 1.5em;
+    color: blue;
+}
+.attractions p:hover{
+    background-color: lightgreen;
+    color: black;
+}
+/*styling table*/
+.table{
+    background: transparent;
+    font-weight: bolder;
+}
+table{
+    background-color: white;
+}
+.table h1{
+    color: white;
+}
+.table, th, td{
+    border: 2px solid;   
+    padding: 1em; 
+}
+.table img{
+    width: 100%;
+
+}
+.table td ul{
+    padding: 1.5em;
+}
+.table tfoot{
+    background-color: rgb(207, 204, 204);
+}
+
+/*styling footer*/
+.footer {
+    margin-top: 2%;
+    padding: 1em;
+    width: 100%;
+    background: linear-gradient(rgb(8, 39, 8),black);
+    color:white;
+    text-align:center;
+}
+.footer .references{
+    background-color: rgb(56, 56, 56);
+}
+.footer a, .footer .references a{
+    color: rgb(149, 221, 161);
+}
+
+/*media queries*/
+@media only screen and (min-width: 70em) {/*desktop*/
+    html{
+        font-size: 70%;
+    }
+    header .navbar{
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        width: 100%;
+        text-align: center;
+        height: 7%;
+        
+    }
+    .header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .navbar{
+        background-color: black;
+    }
+    header .navbar  li{
+        display: inline-block;
+        margin: 1rem;
+    }
+    header .navbar li a{
+        color: #fff;
+        font-size: 1rem;
+        margin: 0.8rem;
+    }
+    header .navbar a:hover{
+        color: lightgreen;
+    }
+    .responsive-img{
+        background-image: linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/wild.jpg);
+    }
+    .responsive-img .welcome-text{
+        display: block;
+        margin-top: 10%;
+        width: 50%;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: block;
+    }
+    .mobile-intro{
+        display: none;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+    .attractions{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        margin: 0 20%
+
+    }
+    table{
+        background-color: white;
+        font-size: 1.5em;
+
+    }
+    footer .one{ 
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    
+    } 
+
+}
