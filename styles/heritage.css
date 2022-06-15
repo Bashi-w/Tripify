@@ -125,7 +125,7 @@ header .navbar a:hover{
 }
 .container .location {
     position: relative;
-    width: 50%;
+    width: 100%;
   }
   
 .container .location img {
