@@ -180,8 +180,8 @@ h1, h2{
     border: 1px solid orange;
     padding: 1em;
 }
-.tea .tea-products img{
-    width: 100%;
+.tea .tea-products h2{
+    color: #222;
 }
 button{
     color: white;
