@@ -189,6 +189,108 @@ body{
     padding: 0.9em;
     background-color: rgb(180, 224, 180);
 }
+/*form style*/
+#current-order, #overall-order, #overall-cost, #cost{
+    min-height: 50px;
+    border: 1px solid black;
+}
+
+#cost{
+    float: right;
+}
+
+#activity{
+    margin-left: 45%;
+    font-size: 1em;
+    border: 1px solid black;
+}
+/*#duration, #current-cost{
+    border: 1px solid black;
+    width: fit-content;
+}*/
+.numbers{
+    display: flex;
+    gap: 1em;
+}
+.numbers fieldset, #extras{
+    width: 100%;
+    line-height: 2.2em;
+}
+input{
+    width: 30px;
+}
+
+#extras{
+    display: flex;
+    gap: 5%;
+}
+#pass{
+    border: 1px solid black;
+}
+table{
+    border: 1px solid black;
+    width: 90%;
+}
+table th{
+    text-align: left;
+}
+
+.current{
+    background-color: rgb(209, 241, 241);
+    height: 50%;
+    position: sticky;
+    width: 60%;
+    z-index: 1;
+    top: 12%;
+    left: 60%;
+    overflow-x: hidden;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.5em;
+}
+.current #order-container{
+    margin-top: 20%;
+}
+.form, .overall{
+    width: 100%;
+    background-color: #fff;
+    padding: 5%;
+    margin: 8%;
+    font-size: 1.4em;  
+}
+.testt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form fieldset{
+    background-color: rgb(191, 235, 204);
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+.form fieldset legend{
+    color: rgb(26, 24, 24);
+    padding: 1%;
+    font-weight: 900;
+}
+
+.buttons{
+    text-align: center;
+}
+#add, #place{
+    padding: 1em;
+    margin: 1em;
+    cursor: pointer;
+    border: 1px solid rgb(48, 48, 48);
+}
+
+#add:hover, #place:hover{
+    background-color: rgb(127, 179, 127);
+}
+.overall{
+    background-color: rgb(191, 235, 204);
+}
 .heritage{
     padding: 2em;
     color: #fff;
@@ -204,7 +306,7 @@ body{
     transition: width 1.5s;
 }
 .heritage .links figure a img:hover{
-    width: 70%;
+    width: 55%;
 
 }
 /*styling footer*/
