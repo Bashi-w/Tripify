@@ -172,7 +172,194 @@
                     </p>                    
                 </div>               
             </section>
+
         </article>
+        <!--form-->
+        <article class="testt">
+            <form method="get" name="form" class="form">
+                <p><b>BOOK YOUR TICKETS NOW!!</b></p>
+                <select name="activity" id="activity">
+                    <option value="safari">Safari</option>
+                    <option value="surfing">Surfing</option>
+                    <option value="whale-watching">Whale Watching</option>
+                </select>
+                <fieldset>              
+                    <legend>Type of ticket</legend>
+                    <p>
+                        <input type="checkbox" name="ticket" id="local">
+                        <label for="local">Local Pass</label>               
+                    </p>        
+                    <p>
+                        <input type="checkbox" name="ticket" id="child">
+                        <label for="child">Child Pass</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="ticket" id="foreigner">
+                        <label for="foreigner">Foreigner Pass</label>
+                    </p>
+                </fieldset>
+                <fieldset class="numbers">
+                    <legend>Number of tickets</legend>
+                    <fieldset>
+                        <legend>Local</legend>
+                        <p>
+                            <label for="adults">Adults:</label>
+                            <input type="number" id="local-adults" name="adults" min="0" value="0" oninput="myFunction()">
+                            
+                        </p>
+                        <p>
+                            <label for="children1">Children below 15:</label>
+                            <input type="number" id="local-children1" name="children" min="0" value="0" oninput="myFunction()"> 
+                        </p>
+                        <p>
+                            <label for="children2">Children below 6:</label>
+                            <input type="number" id="local-children2" name="children" min="0" value="0" oninput="myFunction()"> 
+                        </p>
+        
+                    </fieldset>
+                    <fieldset>
+                        <legend>Price</legend>
+                        <p id="cost1">0</p>
+                        <p id="cost2">0</p>
+                        <p id="cost3">0</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Foreigner</legend>
+                        <p>
+                            <label for="adults">Adults:</label>
+                            <input type="number" id="foreign-adults" name="adults" min="0" value="0" onclick="myFunction()">
+                            
+                        </p>
+                        <p>
+                            <label for="children1">Children below 15:</label>
+                            <input type="number" id="foreign-children1" name="children" min="0" value="0" onclick="myFunction()"> 
+                        </p>
+                        <p>
+                            <label for="children2">Children below 6:</label>
+                            <input type="number" id="foreign-children2" name="children" min="0" value="0" onclick="myFunction()"> 
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Price</legend>
+                        <p id="cost4">0</p>
+                        <p id="cost5">0</p>
+                        <p id="cost6">0</p>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Duration</legend>
+                    <p>
+                        <input type="radio" name="duration" value="3 hours" class="dur" id="3 hours">
+                        <label for="three">3 hours</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="duration" id="half-day" class="dur" value="half-day">
+                        <label for="three">12 hours (1/2 day)</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="duration" id="day" class="dur" value="day">
+                        <label for="three">24 hours (full day)</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="duration" id="twodays" class="dur">
+                        <label for="three">48 hours (two days)</label>
+                    </p>
+                </fieldset>
+                <fieldset id="extras">
+                    <legend>Extras(optional)</legend>
+                    <div>
+                        <p>
+                            <label for="pass">Annual Pass</label>  
+                            <input type="number" id="pass" name="pass" min="0" value="0" onclick="myFunction()">       
+                        </p>        
+                        <p>
+                            <label for="token">Food token</label>
+                            <input type="number" id="token" name="token" min="0" value="0" onclick="myFunction()">
+                        </p>
+                    </div>
+                    <div>
+                        <p id="cost7">Price</p>
+                        <p id="cost8">Price</p>
+                    </div>
+                    
+                    
+                </fieldset>
+                <div class="buttons">
+                    <a href="#overall"><button type="button" name="add" id="add">Add to order</button></a>
+                    <button type="submit" name="place" id="place">Place order</button>
+                </div>
+                
+            </form>
+            
+            <div class="current">
+                <h1>Current Order</h1>
+                <div id="order-container">
+                    <p id="1" class="a">No Current Orders. Current Cost: 0 LKR</p>
+                    <p id="2" class="b"></p>
+                    <p id="3" class="b"></p>
+                    <p id="4" class="b"></p>
+                    <p id="5" class="b"></p>
+                    <p id="6" class="b"></p>
+                    <p id="7" class="b"></p>
+                </div>
+            </div>
+    
+            
+            <section class="overall">
+                <a id="overall"></a>       
+                <h1>Overall Order</h1>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Quantity</th>
+                        <th>Price (LKR)</th>
+                    </tr>
+                    <tr>
+                        <td>Local Pass (Adult)</td>
+                        <td id="l1"></td>  
+                        <td id="l2"></td>             
+                    </tr>
+                    <tr>
+                        <td>Local Pass (Child)</td>
+                        <td id="lc1"></td>
+                        <td id="lc2"></td>
+                    </tr>
+                    <tr>
+                        <td>Foreign Pass (Adult)</td>
+                        <td id="f1"></td>
+                        <td id="f2"></td>
+                    </tr>
+                    <tr>
+                        <td>Foreign Pass (Child)</td>
+                        <td id="fc1"></td>
+                        <td id="fc2"></td>
+                    </tr>
+                    <tr>
+                        <td>Annual Pass</td>
+                        <td id="ap1"></td>
+                        <td id="ap2"></td>
+                    </tr>
+                    <tr>
+                        <td>Food Token</td>
+                        <td id="ft1"></td>
+                        <td id="ft2"></td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td>Duration</td>
+                            <td id="duration"></td>
+                            <td id="duration-cost"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Overall Cost</b></td>
+                            <td> : </td>
+                            <td><span id="overall-cost"></span><span id="d-cost"></span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+        
 
         <!--liks to heritage locations-->
         <article class="heritage">
@@ -268,6 +455,6 @@
         -->
     </footer>
 
-    
+    <script src="scripts/main.js"></script>
 </body>
 </html>
