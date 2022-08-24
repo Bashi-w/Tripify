@@ -248,13 +248,10 @@ figcaption{
     background-color: white;
 }
 .donations .why-donate{
-    background-color: rgb(255, 255, 255);
-    color: rgb(24, 160, 20);
+    background: linear-gradient( white, rgb(154, 255, 154));
     width: 100%;
     padding: 5%;
     font-size: medium;
-    border: 1px dashed black;
-    border-radius: 10%;
 }
 .donations .why-donate h2{
     color: black;
