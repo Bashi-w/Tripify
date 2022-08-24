@@ -1,5 +1,5 @@
 //creating a constant for static cache
-const statCache='statv2';
+const statCache='statv3';
 //creating a constant for dynamic cache
 const dynaCache='dynav1';
 
