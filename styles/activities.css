@@ -189,40 +189,84 @@ body{
     padding: 0.9em;
     background-color: rgb(180, 224, 180);
 }
+
 /*form style*/
-#current-order, #overall-order, #overall-cost, #cost{
-    min-height: 50px;
-    border: 1px solid black;
+#book{
+    text-align: center;
+}
+
+.form{
+    opacity: 0.85;
+    font-weight: 800;
 }
 
 #cost{
     float: right;
 }
 
-#activity{
-    margin-left: 45%;
-    font-size: 1em;
-    border: 1px solid black;
+.activitytype{
+    text-align: center;
 }
-/*#duration, #current-cost{
-    border: 1px solid black;
-    width: fit-content;
-}*/
-.numbers{
+#activity #opt1{
+    display: none;
+}
+
+#type{
     display: flex;
+    margin: 0 20%;
+    gap: 2em;
+}
+.ticket{
+    cursor: pointer;
+}
+#tickettype1{
+    background-color: rgb(142, 235, 142);
+    width: 100%;
+}
+#tickettype1,#tickettype2{
+    width: 100%;
+    padding: 5% 0;
+    
+}
+#local-tickets , #foreign-tickets {
+   display: table;
+}
+#local-tickets p, #foreign-tickets p{ 
+    display: table-row;  
+}
+
+#local-tickets label, #foreign-tickets label{ 
+    display: table-cell; 
+}
+
+label > input[type=radio] {
+    visibility: hidden;
+    
+}
+
+
+.numbers{
     gap: 1em;
+    display: flex;
+}
+#foreign-tickets, #foreign-prices, #duration-foreign{
+    display: none;
 }
 .numbers fieldset, #extras{
     width: 100%;
     line-height: 2.2em;
 }
 input{
-    width: 30px;
+    width: 35px;
+    border: 1px solid black;
 }
 
-#extras{
+#extrasL, #extrasF{
     display: flex;
     gap: 5%;
+}
+#extrasF{
+    display: none;
 }
 #pass{
     border: 1px solid black;
@@ -238,29 +282,21 @@ table th{
 .current{
     background-color: rgb(209, 241, 241);
     height: 50%;
-    position: sticky;
-    width: 60%;
-    z-index: 1;
-    top: 12%;
-    left: 60%;
-    overflow-x: hidden;
+    width: 100%;
     padding: 2%;
     text-align: center;
     font-size: 1.5em;
 }
-.current #order-container{
-    margin-top: 20%;
-}
-.form, .overall{
+
+.form, .overall, .current{
     width: 100%;
-    background-color: #fff;
+    background: linear-gradient(rgb(137, 207, 146), rgb(238, 238, 245));
     padding: 5%;
-    margin: 8%;
+    margin: 2em 0;
     font-size: 1.4em;  
 }
 .testt{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .form fieldset{
@@ -276,21 +312,21 @@ table th{
 }
 
 .buttons{
-    text-align: center;
+    text-align: right;
 }
 #add, #place{
     padding: 1em;
     margin: 1em;
     cursor: pointer;
     border: 1px solid rgb(48, 48, 48);
+    font-weight: 900;
+    background-color: rgb(127, 179, 127);
 }
 
 #add:hover, #place:hover{
-    background-color: rgb(127, 179, 127);
+    background-color: rgb(194, 233, 194);
 }
-.overall{
-    background-color: rgb(191, 235, 204);
-}
+
 .heritage{
     padding: 2em;
     color: #fff;
@@ -387,6 +423,25 @@ table th{
         display: flex;
         flex-direction: row;
     
+    }
+    
+    .testt{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .current{
+        position: sticky;
+        width: 60%;
+        z-index: 1;
+        top: 12%;
+        left: 60%;
+        overflow-x: hidden;
+    }
+    .current #order-container{
+        margin-top: 20%;
+    }
+    .form, .overall{
+        margin: 2em 3em;
     }
     .main-image{
         padding: 0;

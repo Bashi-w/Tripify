@@ -17,7 +17,7 @@ html{
 
 }
 body{
-    background-image:linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/sl.jpg);
+    background-image:linear-gradient(rgba(2, 2, 2, 0.911),rgba(10, 6, 6, 0)), url(bg-images/sl.jpg);
     background-attachment: fixed;
 }
 /*Styling header*/
@@ -127,43 +127,50 @@ header .navbar a:hover{
 .products{
     width: 60%;
     display: block;
+    margin: 0 15%;
+    gap: 0.75em;
+    background-color: rgb(0, 0, 0);
 }
 .products .product{
     position: relative;
     height: fit-content;
+    
 }
 .products .product img{
     width: 100%;
 }
 .products .product div{   
-    position: absolute;
+    top: 0;
     bottom: 0;
     right: 0;
+    font-size: 0.7em;
     background: black;
     color: white;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
+    padding: 1em;
     width: 100%;
 }
 .products .product:hover{
     cursor: pointer;
 }
-   
-.products .product:hover div{
+
+
+.cart:active{
+    transform: translateY(0.1rem);
+}
+
+
+/*.products .product:hover div{
     width: 100%;
     padding: 8px 15px;
-    visibility: visible;
-    opacity: 0.7; 
-}
+}*/
 h1, h2{
     text-align: center;
     color: #fff;
 }
 .tea{
+    margin: 7rem;
     background-color: #fff;
-    opacity: 0.75;
+    opacity: 0.85;
     display: block;
     gap: 2em;
     padding: 6em;
@@ -172,43 +179,73 @@ h1, h2{
     width: 100%;
 }
 .tea .tea-products{
+    background-color: rgb(17, 14, 14);
+    color: white;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
+}
+.tea .tea-products h2{
+    color: rgb(223, 205, 205);
 }
 .tea .tea-products section{
     border: 1px solid orange;
     padding: 1em;
 }
-.tea .tea-products h2{
-    color: #222;
-}
 button{
-    color: white;
-    background-color: rgb(138, 90, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(135, 228, 151);
     padding: 0.8em;
+    cursor: pointer;
+    
 }
-button:hover{
-    background-color: rgb(85, 80, 64);
+button:active{
+    transform: translateY(0.14rem);
 }
+.order{
+    background-color: red;
+}
+#addfav, #fav-order, #loyalty{
+    width: 100%;
+    text-align: right;
+    font-weight: 800;
+}
+#addfav:hover,#fav-order:hover, #loyalty:hover{
+    border: 1px solid black;
+}
+.orders{
+    margin: 0 20%;
+    background-color: rgb(227, 245, 228);
+    opacity: 0.85;
+}
+#cart, #favs, #outputp,#lpoints{
+    min-height: 30px;
+    margin: 0 5%;
+    padding: 3em;
+    font-size: 1.5em;
+}
+
 .products, .tea p{
     font-size: 2em;
 }
 figcaption{
     font-size: 1.5em;
 }
+
 .donations{
     display: block;
     padding: 0  10% ;
     margin-bottom: 2%;
-    
-
 }
 .donations .donation-form h2{
     font-size: 3em;
     text-align: center;
     color: #fff;
 
+}
+
+.donations button{
+    background-color: white;
 }
 .donations .why-donate{
     background-color: rgb(255, 255, 255);
@@ -226,22 +263,46 @@ figcaption{
 
 /*style form*/
 form{
-    text-align: center;
-    background-color: rgb(152, 236, 152);
+    display: table;
+    width: 100%;
+    background-color: rgb(147, 204, 147);
     padding: 1.4em;
+    font-size: 1.35em;
+    font-weight: 900;
 }
-form label{
-    font-size: 2em;
-    
+.required:after {
+    content:" *";
+    color: red;
+  }
+form p { display: table-row;  }
+
+label { display: table-cell; }
+
+form fieldset{
+    background-color: rgb(191, 235, 204);
+    padding: 1%;
+    border: 1px solid black;
 }
-form input{
+form fieldset legend{
+    color: rgb(26, 24, 24);
+    padding: 1%;
+    font-weight: 900;
+}
+
+form input, textarea{
+    border: 1px solid black;
+    margin-top: 2%;
+    display: table-cell;
+}
+textarea{
+    resize: none;
+}
+#name, #email, #telephone{
     width: 90%;
-    height: 3em;
+    height: 2em;
 }
-form input .submit{
-    background-color: orange;
-    color: white;
-}
+
+
 
 /*style footer*/
 .footer {
