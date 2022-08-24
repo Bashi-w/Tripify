@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the Purchase and Donate page of the website where users and purchase local merchandise and make donations">
     <!--stylesheet-->
     <link rel="stylesheet" href="styles/donations.css" type="text/css">
     <title>PURCHASE AND DONATE</title>
@@ -50,7 +51,7 @@
 
         <!--for mobile view-->
         <p class="mobile-intro">
-            A trip to Sri Lanka would be incomplete without some shopping. After savouring its tropical climate, beautiful beaches, and scrumptious food, you should bring a piece of the country home with you. And a trip to the Barefoot store or one of the state-run Laksala souvenir shops should satisfy all of your shopping needs. Silken saris, precious precious gems, ceremonial masks and sculptures – these are the items to bring back to represent the best of the country's artisanal expertise.
+            A trip to Sri Lanka would be incomplete without some shopping. After savouring its tropical climate, beautiful beaches, and scrumptious food, you should bring a piece of the country home with you. And a trip to the Barefoot store or one of the state-run Laksala souvenir shops should satisfy all of your shopping needs. Silken saris, precious precious gems, ceremonial masks and sculptures - these are the items to bring back to represent the best of the country's artisanal expertise.
             <br>
             <a class="direct" href="#direct">SHOP NOW</a>
         </p>
@@ -66,58 +67,62 @@
 
                 <section class="product">
                     <img src="imageswebp/mask.webp" alt="traditional yaka mask">
-                    <div>
-                        <p>WOODEN MASKS</p>
-                        <p>35.10 USD</p>                        
-                        <button type="button">ADD TO CART</button>
+                    <div class="product-info">
+                        <p class="item">WOODEN MASK</p>
+                        <p class="price">35.10 USD</p>                        
+                        <button type="button" class="cart" value="35.10 USD"  id="Wooden_mask" >ADD TO CART</button>
                     </div>
                 </section>
 
                 <section class="product">
                     <img src="imageswebp/sarong.webp" alt="unisex sarongs">
-                    <div>
-                        <p>BATIK SARONGS</p>
+                    <div class="product-info">
+                        <p>BATIK SARONG</p>
                         <p>5.56 USD</p>                       
-                        <button type="button">ADD TO CART</button>
+                        <button type="button" class="cart" value="15.56 USD" id="Batik_sarong">ADD TO CART</button>
+
                     </div>
                 </section>
 
                 <section class="product">
-                    <img src="imageswebp/gem2.webp" alt="gems">
-                    <div>
-                        <p>GEMS</p>
-                        <p>75-25000 USD</p>                       
-                        <button type="button">ADD TO CART</button>
+                    <img src="images/sarii.jpg" alt="batik saris">
+                    <div class="product-info">
+                        <p>BATIK SAREE</p>
+                        <p>16.69 USD</p>                       
+                        <button type="button" class="cart" id="Batik_saree" value="16.69 USD">ADD TO CART</button>
+                        
                     </div>
                 </section>
                 
                 <section class="product">
                     <img src="imageswebp/statue.webp" alt="buddha statues">
-                    <div>
-                        <p>BUDDHA FIGURINES</p>
+                    <div class="product-info">
+                        <p>BUDDHA FIGURINE</p>
                         <p>69.54 USD</p>                       
-                        <button type="button">ADD TO CART</button>
+                        <button type="button" class="cart" id="Buddha_figurine" value="69.54 USD">ADD TO CART</button>
+
                     </div>
                 </section>
 
                 <section class="product">
                     <img src="imageswebp/ele.webp" alt="elephant souvenirs">
-                    <div>
-                        <p>ELEPHANT SOUVENIRS</p>
+                    <div class="product-info">
+                        <p>ELEPHANT SOUVENIR</p>
                         <p>8.34 USD</p>                       
-                        <button type="button" >ADD TO CART</button>
+                        <button type="button" class="cart" id="Elephant_souvenir" value="8.34 USD">ADD TO CART</button>
                     </div>
                 </section>
 
                 <section class="product">
-                    <img src="imageswebp/sari.webp" alt="batik saris">
-                    <div>
-                        <p>BATIK SARIS</p>
-                        <p>16.69 USD</p>                       
-                        <button type="button">ADD TO CART</button>
+                    <img src="images/sapphire.jpg" alt="gem">
+                    <div class="product-info">
+                        <p>BLUE SAPPHIRE GEM</p>
+                        <p>25000 USD</p>                       
+                        <button type="button" class="cart" id="Blue_sapphire_gem" value="25000 USD">ADD TO CART</button>
                     </div>
                 </section>
             </article>
+
         </article>
 
         <h2>CEYLON TEA</h2>
@@ -130,35 +135,58 @@
             </figure>
             <div class="tea-products">
 
-                    <section>
+                    <section class="product-info">
                         <h2>Dilmah Tea 200g</h2>
                         <img src="imageswebp/dilmah.webp" alt="dilmah tea">
                         <p>9.27 USD</p>
-                        <button type="button">ADD TO CART</button> 
+                        <button type="button" class="cart" id="Dilmah_tea(200g)" value="9.27 USD">ADD TO CART</button> 
                     </section>
 
                     <section>
                         <h2>Lipton Ceylonta Tea 200g</h2>
                         <img src="imageswebp/lipton.webp" alt="lipton tea">
                         <p>2.23 USD</p>
-                        <button type="button">ADD TO CART</button> 
+                        <button type="button" class="cart" id="Lipton_Ceylonta_Tea(200g)" value="2.23 USD">ADD TO CART</button> 
                     </section>
 
                     <section>
                         <h2>Mackwoods Tea 200g</h2>
                         <img src="imageswebp/mackwoods.webp" alt="mackwoods tea">                       
                         <p>4.24 USD</p>
-                        <button type="button">ADD TO CART</button> 
+                        <button type="button" class="cart" id="Mackwoods_Tea(200g)" value="4.24 USD">ADD TO CART</button> 
                     </section>
 
                     <section>
-                        <h2>Teaeli</h2>
+                        <h2>Teaeli Loose Leaf Caddy 25g</h2>
                         <img src="imageswebp/teaeli.webp" alt="teaeli">                        
                         <p>2.22 USD</p>
-                        <button type="button">ADD TO CART</button> 
+                        <button type="button" class="cart" id="Teaeli_Loose_Leaf_Caddy(25g)" value="2.22 USD">ADD TO CART</button> 
                     </section>
             </div>
         </article>
+        <div class="orders">
+            <p id="cart">
+                <em><strong>CART</strong></em>
+                <br>
+                <span id="cart-info"></span>
+                <button id="addfav">ADD TO FAVOURITES</button><br>
+                <span id="addfav-confirm"></span>
+            </p>
+                
+            <br>
+            <p id="outputp">
+                <button id="fav-order">ORDER FAVOURITES</button>
+                <span id="output"></span><br>           
+            </p>
+            <p id="lpoints">
+                <button id="loyalty">CHECK LOYALTY</button>
+                <span id="points"></span>               
+            </p>
+        </div>
+        
+        
+        <br>      
+
         <br>
         <br>
         <article class="donations">
@@ -192,43 +220,74 @@
             <!--Donation form-->
             <section class="donation-form">
                 <h2>MAKE A DONATION</h2>
-                <form action="/action_page.php">
-                    <label for="fname">First name: </label>
+                <form method="get" name="donationForm" onsubmit="return validate()">
+                    <fieldset>
+                        <legend>Personal details</legend>
+                        <label for="name" class="required">Name: </label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email" class="required">Email address: </label>
+                        <input type="email" name="email" id="email" required ><br><br>
+                        <label for="phone">Telephone: </label>
+                        <input type="tel" name="phone" id="phone" maxlength="12"><br><br>
+                        <label for="address">Address: </label>
+                        <textarea name="address" id="address" cols="30" rows="4"></textarea><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Donation amount</legend>
+                        <p>
+                            <input type="radio" name="amount" id="first" checked>
+                            <label for="first">100 LKR</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="amount" id="second">
+                            <label for="second">250 LKR</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="amount" id="third">
+                            <label for="third">500 LKR</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="amount" id="fourth">
+                            <label for="fourth">1000 LKR</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="amount" id="fifth">
+                            <label for="fifth">2500 LKR</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="amount" id="sixth">
+                            <label for="sixth">5000 LKR</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="amount" id="seventh">
+                            <label for="seventh">10000 LKR</label>
+                        </p>          
+                    </fieldset>
+                    <fieldset>
+                        <legend>Card details</legend>
+                        <p>
+                            <label for="cardname" class="required">Cardholder name:</label>
+                            <input type="text" name="cardname" id="cardname" required>
+                        </p>
+                        <p>
+                            <label for="cardnum" class="required" >Card number:</label>
+                            <input name="cardnum" id="cardnum"  type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required>
+                        </p>
+                        <p>
+                            <label for="cvv" class="required">CVV:</label>
+                            <input type="text" name="cvv" id="cvv"  placeholder="3 digits on back of card" pattern="^[0-9]{3}$" maxlength="3" required>
+                        </p>
+                        <p>
+                            <label for="expiryDate" class="required">Expiration date:</label>
+                            <input type="month" id="expiryDate" name="expiryDate"
+                            min="2022-11" value="2022-10" required >
+                        </p> 
+                    </fieldset>
                     <br>
-                    <input type="text" id="fname" name="fname" placeholder="Enter your first name">
-                    <br>
-                    <label for="lname">Last name: </label>
-                    <br>
-                    <input type="text" id="lname" name="lname" placeholder="Enter your last name">
-                    <br>
-                    <label for="email">Email: </label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address">
-                    <br>
-                    <label for="cardname">Name on card: </label>
-                    <br>
-                    <input type="text" name="cardname" id="cardname" required>
-                    <br>
-                    <label for="cardnumber">Card Number: </label>
-                    <br>
-                    <input type="text" name="cardnumber" id="cardnumber" required>
-                    <br>
-                    <label for="address">Billing address: </label>
-                    <br>
-                    <input type="text" name="address" id="address" required>
-                    <br>
-                    <label for="cvc">CV Code:</label>
-                    <br>
-                    <input type="text" name="cvc" id="cvc" required>
-                    <br>
-                    <label for="expiration">Expiration date:</label>
-                    <br>
-                    <input type="month" name="expiration" id="expiration" required>
-                    <br>
-                    <br>
-                    <input type="submit" value="Make Donation">
+                    <button type="submit" name="submit" id="submit">Make Donation</button>
                 </form>
-
+                <p id="message"></p>
+                
             </section>
             
         </article>
@@ -310,5 +369,7 @@
 
         -->
     </footer>
+    <script src="scripts/purchase.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
