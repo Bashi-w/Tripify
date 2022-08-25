@@ -1,10 +1,10 @@
 //creating a constant for static cache
-const statCache='statv8';
+const statCache='statv10';
 //creating a constant for dynamic cache
 const dynaCache='dynav1';
 
 //storing shell/static assets in an array
-const assets=['./','./index.html','./activities.html','./fallback.html','styles/fallback.css', './beaches.html', './donations.html', './food.html', './heritage.html', './hotels.html', './kandy.html', './sigirya.html', './styles/index.css', './styles/activities.css', './styles/beaches.css', './styles/donations.css', 'wild.html', 'styles/food.css', 'styles/heritage.css', 'styles/hotels.css', 'styles/kandy.css', 'styles/main.css', 'styles/sigirya.css', 'styles/wildlife.css'];
+const assets=['./','./index.html','./activities.html','./fallback.html','styles/fallback.css','images/fallb.png' , './beaches.html', './donations.html', './food.html', './heritage.html', './hotels.html', './kandy.html', './sigirya.html', './styles/index.css', './styles/activities.css', './styles/beaches.css', './styles/donations.css', 'wild.html', 'styles/food.css', 'styles/heritage.css', 'styles/hotels.css', 'styles/kandy.css', 'styles/main.css', 'styles/sigirya.css', 'styles/wildlife.css','favicons/favicon-16x16.png','favicons/favicon-32x32.png'];
 
 //the install event
 self.addEventListener('install',(evt)=>{
