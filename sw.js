@@ -4,7 +4,7 @@ const statCache='statv13';
 const dynaCache='dynav1';
 
 //storing shell/static assets in an array
-const assets=['./','./index.html','./activities.html','./fallback.html','styles/fallback.css','images/fallb.png', './donations.html', './food.html', './heritage.html', './hotels.html', './kandy.html', './sigirya.html', './styles/index.css', './styles/activities.css', './styles/beaches.css', './styles/donations.css', 'wild.html', 'styles/food.css', 'styles/heritage.css', 'styles/hotels.css', 'styles/kandy.css', 'styles/main.css', 'styles/sigirya.css', 'styles/wildlife.css','favicons/favicon-16x16.png','favicons/favicon-32x32.png','manifest.json', 'main.js'];
+const assets=['./','./index.html','./activities.html','./fallback.html','styles/fallback.css','images/fallb.png', './donations.html', './food.html', './heritage.html', './hotels.html', './kandy.html', './sigirya.html', './styles/index.css', './styles/activities.css', './styles/beaches.css', './styles/donations.css', 'wild.html', 'styles/food.css', 'styles/heritage.css', 'styles/hotels.css', 'styles/kandy.css', 'styles/main.css', 'styles/sigirya.css', 'styles/wildlife.css','favicons/favicon-16x16.png','favicons/favicon-32x32.png','manifest.json', 'main.js','styles/bg-images/wild-cropped.jpg'];
 
 //the install event
 self.addEventListener('install',(evt)=>{
@@ -62,7 +62,7 @@ self.addEventListener('fetch',(evt)=>{
         }).catch(()=>{
             //check whether the request url contains .html in it
             if(evt.request.url.indexOf('.html')>-1){
-                return caches.match('/fallback.html')
+                return caches.match('./fallback.html')
             }
             })
     );
