@@ -1,10 +1,10 @@
 //creating a constant for static cache
-const statCache='statv14';
+const statCache='statv15';
 //creating a constant for dynamic cache
 const dynaCache='dynav1';
 
 //storing shell/static assets in an array
-const assets=['./','./index.html','./activities.html','./fallback.html','styles/fallback.css','images/fallb.png', './donations.html', './food.html', './heritage.html', './hotels.html', './kandy.html', './sigirya.html', './styles/index.css', './styles/activities.css', './styles/beaches.css', './styles/donations.css', 'wild.html', 'styles/food.css', 'styles/heritage.css', 'styles/hotels.css', 'styles/kandy.css', 'styles/main.css', 'styles/sigirya.css', 'styles/wildlife.css','favicons/favicon-16x16.png','favicons/favicon-32x32.png','manifest.json', 'main.js','styles/bg-images/wild-cropped.jpg'];
+const assets=['./','./index.html','./activities.html','./fallback.html','styles/fallback.css','images/fallb.png', './donations.html', './food.html', './heritage.html', './hotels.html', './kandy.html', './sigirya.html', './styles/index.css', './styles/activities.css', './styles/beaches.css', './styles/donations.css', 'wild.html', 'styles/food.css', 'styles/heritage.css', 'styles/hotels.css', 'styles/kandy.css', 'styles/main.css', 'styles/sigirya.css', 'styles/wildlife.css','favicons/favicon-16x16.png','favicons/favicon-32x32.png','manifest.json', 'main.js','styles/bg-images/wild-cropped.jpg','styles/bg-images/beach4.jpg','styles/bg-images/bg.webp','styles/bg-images/d4.jpg','styles/bg-images/h4.jpg','styles/bg-images/heritage bg.jpg','styles/bg-images/home2.jpg','styles/bg-images/home3.webp','styles/bg-images/main3.jpg','styles/bg-images/sl.jpg','styles/bg-images/toothrelic.jpg','styles/bg-images/wild-cropped.jpg','styles/bg-images/wild.jpg'];
 
 //the install event
 self.addEventListener('install',(evt)=>{
