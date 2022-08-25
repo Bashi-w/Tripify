@@ -1,10 +1,10 @@
 //creating a constant for static cache
-const statCache='statv3';
+const statCache='statv8';
 //creating a constant for dynamic cache
 const dynaCache='dynav1';
 
 //storing shell/static assets in an array
-const assets=['./','./index.html','./activities.html','./fallback.html', './beaches.html', './donations.html', './food.html', './heritage.html', './hotels.html', './kandy.html', './sigirya.html', './wild.html', './styles/index.css', './styles/activities.css', './styles/beaches.css', './styles/donations.css', ''];
+const assets=['./','./index.html','./activities.html','./fallback.html','styles/fallback.css', './beaches.html', './donations.html', './food.html', './heritage.html', './hotels.html', './kandy.html', './sigirya.html', './styles/index.css', './styles/activities.css', './styles/beaches.css', './styles/donations.css', 'wild.html', 'styles/food.css', 'styles/heritage.css', 'styles/hotels.css', 'styles/kandy.css', 'styles/main.css', 'styles/sigirya.css', 'styles/wildlife.css'];
 
 //the install event
 self.addEventListener('install',(evt)=>{
