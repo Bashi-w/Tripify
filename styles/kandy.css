@@ -1,40 +1,3 @@
-/*import google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
-/*universal selector*/
-*{
-    font-family: 'DM Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-
-}
-html{
-    font-size: 55%;
-    scroll-behavior: smooth;
-}
-/*adding bg-image to body*/
-body{
-    background-image:linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/sl.jpg);
-    background-attachment: fixed;
-}
-
-/*styling header*/
-header{
-    text-transform: uppercase;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem ;
-}
 
 /*styling navbar*/
 header .navbar{
@@ -46,21 +9,10 @@ header .navbar{
     right: 0;
     left: 0;
 }
-header .navbar  li{
-    display: flex;
-    margin: 2rem 8%;
-}
 
-/*styling active link to show user what page they.re on*/
-header .navbar li .active{
-    color: rgb(8, 8, 8);
-    background-color: rgb(84, 202, 100);
-    padding: 1em;
-    border-radius: 10%;
-}
+
 header .navbar a:hover{
     color: lightgreen;
-    font-weight: 900;
 }
 main{
     top: 100%;
@@ -117,21 +69,6 @@ main{
     background-color: lightgray;
 }
 
-/*styling footer*/
-.footer {
-    padding: 1em;
-    width: 100%;
-    background: linear-gradient(rgb(8, 39, 8),black);
-    color:white;
-    text-align:center;
-}
-.footer .references{
-    background-color: rgb(56, 56, 56);
-}
-.footer a, .footer .references a{
-    color: rgb(149, 221, 161);
-}
-
 /*animations*/
 @keyframes x{
     from{margin: 10%; background-color: rgb(61, 60, 60);}
@@ -140,9 +77,6 @@ main{
 
 /*media queries*/
 @media only screen and (min-width: 70em) {  /*desktop*/
-    html{
-        font-size: 70%;
-    }
     header .navbar{
         display: flex;
         position: absolute;
@@ -163,14 +97,6 @@ main{
     header .navbar  li{
         display: inline-block;
         margin: 1rem;
-    }
-    header .navbar li a{
-        color: #fff;
-        font-size: 1rem;
-        margin: 0.8rem;
-    }
-    .logo{
-        display: none;
     }
     .second-nav ul{
         flex-direction: row;

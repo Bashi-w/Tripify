@@ -1,95 +1,8 @@
-/*Import Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
-/*Universal SElector*/
-*{
-    font-family: 'DM Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all .2s linear;
-}
-html{
-    font-size: 55%;
-    scroll-behavior: smooth;
-
-}
-/*Styling header*/
-header{
-    text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem ;
-}
-/*logo for mobile*/
-.logo img{
-    width: 35%;
-}
-
-/*logo for desktop*/
-.logo2{
-    display: none;
-}
-
-/*styling navbar*/
-header .navbar{
-    position: absolute;
-    background-color: rgb(192, 219, 195);   
-    opacity: 0.55;
-    top: 100%;
-    right: 0;
-    left: 0;
-    height: fit-content;
-}
-header .navbar  li{
-    display: flex;
-    margin: 2rem 8%;
-}
-
-header .navbar li a{
-    color: black;
-    font-size: 1.5em;
-    font-weight: bolder;
-}
-header .navbar li .active{
-    color: rgb(8, 8, 8);
-    background-color: rgb(84, 202, 100);
-    padding: 1em;
-    border-radius: 10%;
-}
-header .navbar a:hover{
-    font-size: larger;
-    font-weight: 900;
-}
-
 .responsive-image{
-    min-height: 100vh;
     background: linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)),url(bg-images/home2.jpg);
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     
 }
 
-.responsive-image .welcome-text{
-    display: none;
-}
-.responsive-image .welcome-text p{
-    font-size: 2rem;
-    color: white;
-    
-}
 .responsive-image .welcome-text .direct, .mobile-intro .direct{
     border: 1px solid #fff;
     padding: 10px 25px;
@@ -105,11 +18,6 @@ header .navbar a:hover{
     color: black;
 }
 
-/*adding background image to body*/
-body{
-    background-image:linear-gradient(rgba(2, 2, 2, 0.911),rgba(0, 0, 0, 0)), url(bg-images/sl.jpg);
-    background-attachment: fixed;
-}
 .mobile-intro{
     color: white;
     font-size: 2em;
@@ -339,77 +247,15 @@ table th{
 .heritage .links figure a img{
     width: 50%;
     border-radius: 25%;
-    transition: width 1.5s;
+    transition: width 0.5s;
 }
 .heritage .links figure a img:hover{
     width: 55%;
 
 }
-/*styling footer*/
-.footer {
-    padding: 1em;
-    width: 100%;
-    background: linear-gradient(rgb(8, 39, 8),black);
-    color:white;
-    text-align:center;
-}
-.footer .references{
-    background-color: rgb(56, 56, 56);
-}
-.footer a, .footer .references a{
-    color: rgb(149, 221, 161);
-}
 
 /*media queries*/
 @media only screen and (min-width: 70em) {/*desktop*/
-    html{
-        font-size: 70%;
-    }
-    header .navbar{
-        position: absolute;
-        top: 0;
-        opacity: 1;
-        width: 100%;
-        text-align: center;
-        height: 7%;
-        
-    }
-    .header{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    header .navbar{
-        background-color: black;
-    }
-    header .navbar  li{
-        display: inline-block;
-        margin: 1rem;
-    }
-    header .navbar li a{
-        color: #fff;
-        font-size: 1rem;
-        margin: 0.8rem;
-    }
-    header .navbar a:hover{
-        color: lightgreen;
-    }
-    .responsive-image .welcome-text{
-        display: block;
-        text-align: center;
-        margin-top: 20%;
-        width: 50%;
-    }
-    .logo{
-        display: none;
-    }
-    .logo2{
-        display: block;
-    }
-    .mobile-intro{
-        display: none;
-    }
     .activity{
         display: flex;
     }

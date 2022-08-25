@@ -1,0 +1,17 @@
+body{
+    min-height: 100vh;
+
+}
+div{
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+}
+div a{
+    text-decoration: none;
+    color: rgb(93, 165, 129);
+}
+img{
+    height: 10em;
+    margin: 0 35%;
+}
