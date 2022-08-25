@@ -1,10 +1,10 @@
 //creating a constant for static cache
-const statCache='statv17';
+const statCache='statv18';
 //creating a constant for dynamic cache
 const dynaCache='dynav1';
 
 //storing shell/static assets in an array
-const assets=['/CB010292/', '/CB010292/activities.html'];
+const assets=['/CB010292/','/CB010292/index.html','/CB010292/activities.html','/CB010292/fallback.html','styles/fallback.css','images/fallb.png', '/CB010292/donations.html', '/CB010292/food.html', '/CB010292/heritage.html', '/CB010292/hotels.html', '/CB010292/kandy.html', '/CB010292/sigirya.html', '/CB010292/styles/index.css', '/CB010292/styles/activities.css', '/CB010292/styles/beaches.css', '/CB010292/styles/donations.css', '/CB010292/wild.html', '/CB010292/styles/food.css', '/CB010292/styles/heritage.css', '/CB010292/styles/hotels.css', '/CB010292/styles/kandy.css', '/CB010292/styles/main.css', '/CB010292/styles/sigirya.css', '/CB010292/styles/wildlife.css','/CB010292/favicons/favicon-16x16.png','/CB010292/favicons/favicon-32x32.png','/CB010292/manifest.json', '/CB010292/main.js','/CB010292/styles/bg-images/wild-cropped.jpg','/CB010292/styles/bg-images/beach4.jpg','/CB010292/styles/bg-images/bg.webp','/CB010292/styles/bg-images/d4.jpg','/CB010292/styles/bg-images/h4.jpg','/CB010292/styles/bg-images/heritage bg.jpg','/CB010292/styles/bg-images/home2.jpg','/CB010292/styles/bg-images/home3.webp','/CB010292/styles/bg-images/main3.jpg','/CB010292/styles/bg-images/sl.jpg','/CB010292/styles/bg-images/toothrelic.jpg','/CB010292/styles/bg-images/wild.jpg'];
 
 //the install event
 self.addEventListener('install',(evt)=>{
