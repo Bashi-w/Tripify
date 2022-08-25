@@ -1,7 +1,7 @@
 {
     "name": "TRIPIFY - Your guide to the Jewel of Asia",
     "short_name": "TRIPIFY",
-    "start_url":"../index.html",
+    "start_url":"./index.html",
     "id":"index.html",
     "icons": [
         {
